@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DripLog Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="profile">
+            <img src="user-profile.gif" alt="User Profile">
+            <h2>Amisha</h2>
+            <p>AI/ML | Competitive Programmer | Web Developer</p>
+            <div class="links">
+                <a href="https://github.com/Amisha-sinoban" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/amisha-singh-149515281" target="_blank">LinkedIn</a>
+                <a href="mailto:amisasinoban@gmail.com" target="_blank">Email</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>DripLog - Admin Panel</h1>
+            <p>Log your progress and share your coding journey!</p>
+        </header>
+        <form id="entry-form" class="entry-form">
+            <input type="text" id="title" placeholder="Problem title" required>
+            <textarea id="description" placeholder="How did you solve it?" rows="4" required></textarea>
+            <input type="file" id="screenshot" accept="image/*">
+            <textarea id="fullContent" placeholder="Detailed notes, code, and insights..." rows="10" required></textarea>
+            <button type="submit">Post Entry</button>
+        </form>
+        <div class="timeline">
+            <h2>My Coding Journey</h2>
+            <div class="grid" id="entries"></div>
+        </div>
+    </div>
+    <div id="entryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <img id="modalImage" src="" alt="Screenshot">
+            <pre id="modalContent"></pre>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

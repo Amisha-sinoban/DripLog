@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DripLog - Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="viewer.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">DripLog</div>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/amisha-singh-149515281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin</a></li>
+            <li><a href="https://github.com/Amisha-sinoban" target="_blank">GitHub</a></li>
+            <li><a href="mailto:amisasinoban@gmail.com">Email</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Journey of computer science </h1>
+            <p>Follow my journey through the world of coding and beyond!</p> 
+        </header>
+
+        <section class="timeline">
+            <h2>Stories</h2>
+            <div id="entry-grid" class="grid"></div>
+        </section>
+    </div>
+
+    <!-- Modal for Viewing Full Entry -->
+    <div id="entryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <img id="modalImage" src="" alt="Screenshot">
+            <pre id="modalContent"></pre>
+        </div>
+    </div>
+</body>
+</html>
